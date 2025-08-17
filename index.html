@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <title>Motivational Quotes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Motivational Quotes</h1>
-
-    <div id="quote"></div>
-    <div id="category"></div>
-
-    <button id="new-quote">Show New Quote</button>
-
-    <h2>Add a Quote</h2>
-    <input type="text" id="quote-text" placeholder="Enter quote">
-    <input type="text" id="quote-category" placeholder="Enter category">
-    <button id="add-quote">Add Quote</button>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quote Generator</title>
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Dynamic Quote Generator</h1>
+    <div id="quoteDisplay"></div>
+    <button id="newQuote">Show New Quote</button>
     <script src="script.js"></script>
-</body>
-</html>
+    <div>
+    <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
+    <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
+    <button onclick="addQuote()">Add Quote</button>
+  </div>
+  </body>
+  </html>
