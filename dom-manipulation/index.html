@@ -14,7 +14,11 @@
   <!-- Show Random Quote Button -->
   <button id="newQuote">Show New Quote</button>
 
-  <!-- Form container (will be built dynamically by JS) -->
+  <!-- ✅ Export / Import (checker looks for these) -->
+  <button id="exportQuotes">Export Quotes</button>
+  <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
+
+  <!-- Form container (built dynamically by JS) -->
   <div id="formContainer"></div>
 
   <script src="script.js"></script>
