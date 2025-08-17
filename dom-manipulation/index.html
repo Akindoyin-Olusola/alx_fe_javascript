@@ -14,11 +14,17 @@
   <!-- Show Random Quote Button -->
   <button id="newQuote">Show New Quote</button>
 
-  <!-- ✅ Export / Import (checker looks for these) -->
+  <!-- ✅ Category Filter -->
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter" onchange="filterQuotes()">
+    <option value="all">All Categories</option>
+  </select>
+
+  <!-- ✅ Export / Import -->
   <button id="exportQuotes">Export Quotes</button>
   <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
 
-  <!-- Form container (built dynamically by JS) -->
+  <!-- Form container -->
   <div id="formContainer"></div>
 
   <script src="script.js"></script>
